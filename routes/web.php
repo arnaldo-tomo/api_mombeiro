@@ -27,6 +27,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/alerts', [AlertController::class, 'index'])->name('alerts.index');
     Route::patch('/alerts/{alert}/status', [AlertController::class, 'updateStatus'])->name('alerts.update-status');
     Route::get('/alerts/{alert}', [AlertController::class, 'show'])->name('alerts.show');
+    Route::delete('/alerts/{alert}', [AlertController::class, 'destroy'])->name('alerts.destroy');
 });
 
 require __DIR__.'/auth.php';
