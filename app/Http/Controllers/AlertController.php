@@ -16,8 +16,6 @@ class AlertController extends Controller
 
     public function store(Request $request)
     {
-
-
         $request->validate([
             'user_name' => 'required|string|max:255',
             'user_phone' => 'required|string|max:20',
@@ -43,9 +41,6 @@ class AlertController extends Controller
             'longitude' => $request->longitude,
         ]);
 
-        // Broadcast do evento para tempo real
-        // broadcast(new \App\Events\NewAlertCreated($alert));
-
         return response()->json([
             'success' => true,
             'message' => 'Alerta criado com sucesso!',
@@ -61,9 +56,6 @@ class AlertController extends Controller
 
         $alert->update(['status' => $request->status]);
 
-        // Broadcast da atualização
-        broadcast(new \App\Events\AlertStatusUpdated($alert));
-
         return response()->json([
             'success' => true,
             'message' => 'Status atualizado com sucesso!',
@@ -71,9 +63,26 @@ class AlertController extends Controller
         ]);
     }
 
-    public function show(Alert $alert)
+    public function destroy(Alert $alert)
     {
-        return response()->json($alert);
+        try {
+            // Deletar foto se existir
+            if ($alert->photo && Storage::disk('public')->exists($alert->photo)) {
+                Storage::disk('public')->delete($alert->photo);
+            }
+
+            $alert->delete();
+
+            return response()->json([
+                'success' => true,
+                'message' => 'Alerta deletado com sucesso!'
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Erro ao deletar alerta: ' . $e->getMessage()
+            ], 500);
+        }
     }
 
     public function getAlerts()
