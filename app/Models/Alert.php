@@ -14,15 +14,21 @@ class Alert extends Model
         'user_phone',
         'message',
         'photo',
+        'video',        // Novo campo
+        'audio',        // Novo campo
         'location',
         'latitude',
         'longitude',
-        'status'
+        'status',
+        'is_emergency', // Novo campo
+        'metadata'      // Novo campo
     ];
 
     protected $casts = [
         'latitude' => 'decimal:8',
         'longitude' => 'decimal:8',
+        'is_emergency' => 'boolean',
+        'metadata' => 'array',
         'created_at' => 'datetime',
         'updated_at' => 'datetime'
     ];
@@ -43,5 +49,42 @@ class Alert extends Model
             'in_progress' => 'bg-yellow-500',
             'resolved' => 'bg-green-500',
         };
+    }
+
+    public function hasMedia()
+    {
+        return $this->photo || $this->video || $this->audio;
+    }
+
+    public function getMediaCountAttribute()
+    {
+        $count = 0;
+        if ($this->photo) $count++;
+        if ($this->video) $count++;
+        if ($this->audio) $count++;
+        return $count;
+    }
+
+    public function getFormattedLocationAttribute()
+    {
+        return "{$this->latitude}, {$this->longitude}";
+    }
+
+    // Scope para alertas de emergência
+    public function scopeEmergency($query)
+    {
+        return $query->where('is_emergency', true);
+    }
+
+    // Scope para alertas pendentes
+    public function scopePending($query)
+    {
+        return $query->where('status', 'pending');
+    }
+
+    // Scope para alertas do dia
+    public function scopeToday($query)
+    {
+        return $query->whereDate('created_at', today());
     }
 }
