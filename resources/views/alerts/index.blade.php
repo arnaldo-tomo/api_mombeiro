@@ -115,6 +115,14 @@
                             </svg>
                             <span>Atualizar</span>
                         </button>
+
+                        <!-- Teste Manual -->
+                        <button onclick="testarTudo()" class="flex items-center px-4 py-2 space-x-2 text-purple-700 transition-colors bg-purple-50 rounded-xl hover:bg-purple-100">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                            <span>Testar</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -136,52 +144,25 @@
                         <thead class="bg-gray-50">
                             <tr>
                                 <th class="px-6 py-3 text-left">
-                                    <div class="flex items-center space-x-2">
-                                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
-                                        </svg>
-                                        <span class="text-xs font-medium tracking-wide text-gray-500 uppercase">USUÁRIO</span>
-                                    </div>
+                                    <span class="text-xs font-medium tracking-wide text-gray-500 uppercase">USUÁRIO</span>
                                 </th>
                                 <th class="px-6 py-3 text-left">
-                                    <div class="flex items-center space-x-2">
-                                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                        </svg>
-                                        <span class="text-xs font-medium tracking-wide text-gray-500 uppercase">LOCALIZAÇÃO</span>
-                                    </div>
+                                    <span class="text-xs font-medium tracking-wide text-gray-500 uppercase">LOCALIZAÇÃO</span>
                                 </th>
                                 <th class="px-6 py-3 text-left">
-                                    <div class="flex items-center space-x-2">
-                                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
-                                        </svg>
-                                        <span class="text-xs font-medium tracking-wide text-gray-500 uppercase">DESCRIÇÃO</span>
-                                    </div>
+                                    <span class="text-xs font-medium tracking-wide text-gray-500 uppercase">DESCRIÇÃO</span>
                                 </th>
                                 <th class="px-6 py-3 text-left">
-                                    <div class="flex items-center space-x-2">
-                                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                        </svg>
-                                        <span class="text-xs font-medium tracking-wide text-gray-500 uppercase">STATUS</span>
-                                    </div>
+                                    <span class="text-xs font-medium tracking-wide text-gray-500 uppercase">MÍDIA</span>
                                 </th>
                                 <th class="px-6 py-3 text-left">
-                                    <div class="flex items-center space-x-2">
-                                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                        </svg>
-                                        <span class="text-xs font-medium tracking-wide text-gray-500 uppercase">DATA/HORA</span>
-                                    </div>
+                                    <span class="text-xs font-medium tracking-wide text-gray-500 uppercase">STATUS</span>
                                 </th>
                                 <th class="px-6 py-3 text-left">
-                                    <div class="flex items-center space-x-2">
-                                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"/>
-                                        </svg>
-                                        <span class="text-xs font-medium tracking-wide text-gray-500 uppercase">AÇÕES</span>
-                                    </div>
+                                    <span class="text-xs font-medium tracking-wide text-gray-500 uppercase">DATA/HORA</span>
+                                </th>
+                                <th class="px-6 py-3 text-left">
+                                    <span class="text-xs font-medium tracking-wide text-gray-500 uppercase">AÇÕES</span>
                                 </th>
                             </tr>
                         </thead>
@@ -196,71 +177,61 @@
                                         </div>
                                         <div>
                                             <div class="text-sm font-medium text-gray-900">{{ $alert->user_name }}</div>
-                                            <div class="flex items-center text-sm text-gray-500">
-                                                <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                                                </svg>
-                                                {{ $alert->user_phone }}
-                                            </div>
+                                            <div class="text-sm text-gray-500">{{ $alert->user_phone }}</div>
                                         </div>
                                     </div>
                                 </td>
 
                                 <!-- Location Column -->
                                 <td class="px-6 py-4">
-                                    <div class="flex items-start space-x-2">
-                                        <svg class="w-4 h-4 text-green-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                        </svg>
-                                        <div>
-                                            <div class="text-sm text-gray-900">{{ $alert->location }}</div>
-                                            <div class="text-xs text-gray-500">{{ $alert->latitude }}, {{ $alert->longitude }}</div>
-                                        </div>
-                                    </div>
+                                    <div class="text-sm text-gray-900">{{ $alert->location }}</div>
+                                    <div class="text-xs text-gray-500">{{ $alert->latitude }}, {{ $alert->longitude }}</div>
                                 </td>
 
                                 <!-- Description Column -->
                                 <td class="px-6 py-4">
-                                    <div class="max-w-xs">
-                                        <div class="mb-2 text-sm text-gray-900">{{ $alert->message ?? 'Sem descrição' }}</div>
+                                    <div class="text-sm text-gray-900">{{ $alert->message ?? 'Sem descrição' }}</div>
+                                </td>
 
-                                        <!-- Media Files -->
-                                        <div class="flex items-center space-x-2">
-                                            @if($alert->photo)
-                                            <div class="relative group">
-                                                <img src="{{ asset('storage/' . $alert->photo) }}" alt="Foto" class="object-cover w-12 h-12 rounded-lg cursor-pointer media-item image-preview" data-src="{{ asset('storage/' . $alert->photo) }}" data-type="image">
-                                                <div class="absolute inset-0 transition-all bg-black bg-opacity-0 rounded-lg group-hover:bg-opacity-20"></div>
-                                            </div>
-                                            @endif
+                                <!-- Media Column -->
+                                <td class="px-6 py-4">
+                                    <div class="flex flex-col space-y-1">
+                                        @if($alert->photo)
+                                        <button type="button" onclick="abrirImagem('{{ asset('storage/' . $alert->photo) }}')" class="flex items-center px-2 py-1 space-x-2 text-xs text-green-700 rounded bg-green-50 hover:bg-green-100">
+                                            <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"/>
+                                            </svg>
+                                            <span>Foto</span>
+                                        </button>
+                                        @endif
 
-                                            @if($alert->video)
-                                            <div class="relative group">
-                                                <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg cursor-pointer media-item video-preview" data-src="{{ asset('storage/' . $alert->video) }}" data-type="video">
-                                                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293H15M9 10v4a6 6 0 006 6v-4"/>
-                                                    </svg>
-                                                </div>
-                                                <div class="absolute inset-0 transition-all bg-black bg-opacity-0 rounded-lg group-hover:bg-opacity-20"></div>
-                                            </div>
-                                            @endif
+                                        @if($alert->video)
+                                        <button type="button" onclick="abrirVideo('{{ asset('storage/' . $alert->video) }}')" class="flex items-center px-2 py-1 space-x-2 text-xs text-blue-700 rounded bg-blue-50 hover:bg-blue-100">
+                                            <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/>
+                                            </svg>
+                                            <span>Vídeo</span>
+                                        </button>
+                                        @endif
 
-                                            @if($alert->audio)
-                                            <div class="relative group">
-                                                <div class="flex items-center justify-center w-12 h-12 bg-purple-100 rounded-lg cursor-pointer media-item audio-preview" data-src="{{ asset('storage/' . $alert->audio) }}" data-type="audio">
-                                                    <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
-                                                    </svg>
-                                                </div>
-                                                <div class="absolute inset-0 transition-all bg-black bg-opacity-0 rounded-lg group-hover:bg-opacity-20"></div>
-                                            </div>
-                                            @endif
-                                        </div>
+                                        @if($alert->audio)
+                                        <button type="button" onclick="tocarAudio('{{ asset('storage/' . $alert->audio) }}')" class="flex items-center px-2 py-1 space-x-2 text-xs text-purple-700 rounded bg-purple-50 hover:bg-purple-100">
+                                            <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.796L4.828 14H2a1 1 0 01-1-1V7a1 1 0 011-1h2.828l3.555-2.796A1 1 0 019.383 3.076zM12 6a1 1 0 011 1v6a1 1 0 11-2 0V7a1 1 0 011-1zm3-1a1 1 0 000 2 3 3 0 010 6 1 1 0 100 2 5 5 0 000-10z" clip-rule="evenodd"/>
+                                            </svg>
+                                            <span>Áudio</span>
+                                        </button>
+                                        @endif
+
+                                        @if(!$alert->photo && !$alert->video && !$alert->audio)
+                                        <span class="text-xs text-gray-400">Sem mídia</span>
+                                        @endif
                                     </div>
                                 </td>
 
                                 <!-- Status Column -->
                                 <td class="px-6 py-4">
-                                    <select class="text-sm font-medium bg-transparent border-0 status-select focus:ring-0 focus:outline-none" data-alert-id="{{ $alert->id }}">
+                                    <select class="px-2 py-1 text-xs border border-gray-200 rounded status-select" data-alert-id="{{ $alert->id }}">
                                         <option value="pending" {{ $alert->status == 'pending' ? 'selected' : '' }}>🔴 Pendente</option>
                                         <option value="in_progress" {{ $alert->status == 'in_progress' ? 'selected' : '' }}>🟡 Em Progresso</option>
                                         <option value="resolved" {{ $alert->status == 'resolved' ? 'selected' : '' }}>🟢 Resolvido</option>
@@ -270,20 +241,21 @@
                                 <!-- Date Column -->
                                 <td class="px-6 py-4">
                                     <div class="text-sm text-gray-900">{{ $alert->created_at->format('d/m/Y') }}</div>
-                                    <div class="text-sm text-gray-500">{{ $alert->created_at->format('H:i:s') }}</div>
+                                    <div class="text-xs text-gray-500">{{ $alert->created_at->format('H:i:s') }}</div>
                                 </td>
 
                                 <!-- Actions Column -->
                                 <td class="px-6 py-4">
                                     <div class="flex items-center space-x-2">
-                                        <button onclick="viewOnMap({{ $alert->latitude }}, {{ $alert->longitude }})" class="p-2 text-blue-600 transition-colors rounded-lg hover:bg-blue-50">
-                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <button type="button" onclick="verNoMapa({{ $alert->latitude }}, {{ $alert->longitude }})" class="p-1 text-blue-600 rounded hover:bg-blue-50">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
                                             </svg>
                                         </button>
-                                        <button onclick="deleteAlert({{ $alert->id }})" class="p-2 text-red-600 transition-colors rounded-lg hover:bg-red-50">
-                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                                        <button type="button" onclick="excluirAlerta({{ $alert->id }})" class="p-1 text-red-600 rounded hover:bg-red-50">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" clip-rule="evenodd"/>
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
                                             </svg>
                                         </button>
                                     </div>
@@ -291,7 +263,7 @@
                             </tr>
                             @empty
                             <tr id="empty-state">
-                                <td colspan="6" class="px-6 py-12 text-center">
+                                <td colspan="7" class="px-6 py-12 text-center">
                                     <div class="flex flex-col items-center">
                                         <div class="flex items-center justify-center w-12 h-12 mb-4 bg-gray-100 rounded-xl">
                                             <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -311,257 +283,296 @@
         </div>
     </div>
 
-    <!-- Image Modal -->
-    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-75">
-        <div class="flex items-center justify-center min-h-screen p-4">
-            <div class="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden">
-                <div class="flex items-center justify-between p-4 border-b border-gray-200">
-                    <h3 class="text-lg font-semibold text-gray-900">Foto do Alerta</h3>
-                    <button onclick="closeImageModal()" class="text-gray-400 transition-colors hover:text-gray-600">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                        </svg>
-                    </button>
+    <!-- Modal de Imagem -->
+    <div id="modalImagem" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10000;">
+        <div style="display: flex; align-items: center; justify-content: center; height: 100%; padding: 20px;">
+            <div style="background: white; border-radius: 12px; max-width: 90%; max-height: 90%; overflow: hidden;">
+                <div style="padding: 15px; border-bottom: 1px solid #e5e7eb; display: flex; justify-content: space-between; align-items: center;">
+                    <h3 style="margin: 0; font-size: 18px; font-weight: 600;">Foto do Alerta</h3>
+                    <button onclick="fecharModal()" style="background: none; border: none; font-size: 24px; cursor: pointer; color: #6b7280;">×</button>
                 </div>
-                <div class="flex justify-center p-4">
-                    <img id="modalImage" src="" alt="Foto do alerta" class="max-w-full max-h-[70vh] object-contain rounded-xl shadow-lg">
+                <div style="padding: 15px; text-align: center;">
+                    <img id="imagemModal" src="" style="max-width: 100%; max-height: 70vh; border-radius: 8px;">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Video Modal -->
-    <div id="videoModal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-75">
-        <div class="flex items-center justify-center min-h-screen p-4">
-            <div class="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden">
-                <div class="flex items-center justify-between p-4 border-b border-gray-200">
-                    <h3 class="text-lg font-semibold text-gray-900">Vídeo do Alerta</h3>
-                    <button onclick="closeVideoModal()" class="text-gray-400 transition-colors hover:text-gray-600">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                        </svg>
-                    </button>
+    <!-- Modal de Vídeo -->
+    <div id="modalVideo" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10000;">
+        <div style="display: flex; align-items: center; justify-content: center; height: 100%; padding: 20px;">
+            <div style="background: white; border-radius: 12px; max-width: 90%; max-height: 90%; overflow: hidden;">
+                <div style="padding: 15px; border-bottom: 1px solid #e5e7eb; display: flex; justify-content: space-between; align-items: center;">
+                    <h3 style="margin: 0; font-size: 18px; font-weight: 600;">Vídeo do Alerta</h3>
+                    <button onclick="fecharModal()" style="background: none; border: none; font-size: 24px; cursor: pointer; color: #6b7280;">×</button>
                 </div>
-                <div class="flex justify-center p-4">
-                    <video id="modalVideo" controls class="max-w-full max-h-[70vh] rounded-xl shadow-lg">
-                        Seu navegador não suporta o elemento de vídeo.
+                <div style="padding: 15px; text-align: center;">
+                    <video id="videoModal" controls style="max-width: 100%; max-height: 70vh; border-radius: 8px;">
+                        Seu navegador não suporta vídeo.
                     </video>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Notification Toast -->
-    <div id="notification" class="fixed z-50 hidden transition-all duration-300 transform top-4 right-4">
-        <div id="notification-content" class="flex items-center px-6 py-4 space-x-3 bg-white border border-gray-200 shadow-lg rounded-xl">
-            <div id="notification-icon" class="flex-shrink-0">
-                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-            </div>
-            <span id="notification-text" class="text-sm font-medium text-gray-900">Operação realizada com sucesso!</span>
+    <!-- Toast de Notificação -->
+    <div id="toast" style="display: none; position: fixed; top: 20px; right: 20px; z-index: 10001;">
+        <div id="toastContent" style="background: white; border: 1px solid #d1d5db; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); padding: 16px 20px; display: flex; align-items: center; gap: 12px; max-width: 400px;">
+            <div id="toastIcon"></div>
+            <span id="toastText" style="font-size: 14px; font-weight: 500;"></span>
         </div>
     </div>
 
     <script>
-        // Global variables
-        let soundEnabled = true;
-        let currentAlerts = [];
-        let isPolling = false;
-        let pollingInterval = null;
-        let notificationAudio = null;
+        // ================================
+        // VARIÁVEIS GLOBAIS
+        // ================================
+        window.soundEnabled = true;
+        window.currentAlerts = [];
+        window.pollingInterval = null;
+        window.notificationAudio = null;
 
-        // Initialize everything
-        document.addEventListener('DOMContentLoaded', function() {
-            setupEventListeners();
-            initializePolling();
-            loadInitialAlerts();
-            setupNotificationAudio();
-        });
+        // ================================
+        // FUNÇÕES DE MODAL - GLOBAIS
+        // ================================
+        function abrirImagem(src) {
+            console.log('📸 Abrindo imagem:', src);
+            document.getElementById('imagemModal').src = src;
+            document.getElementById('modalImagem').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
 
-        function setupNotificationAudio() {
-            // Inicializar o arquivo de som personalizado
-            notificationAudio = new Audio('/som.mp3');
-            notificationAudio.preload = 'auto';
-            notificationAudio.volume = 0.7;
+        function abrirVideo(src) {
+            console.log('🎥 Abrindo vídeo:', src);
+            document.getElementById('videoModal').src = src;
+            document.getElementById('modalVideo').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
 
-            // Fallback se o arquivo não existir
-            notificationAudio.onerror = function() {
-                console.warn('Arquivo som.mp3 não encontrado. Usando som sintético.');
-                notificationAudio = null;
+        function fecharModal() {
+            console.log('❌ Fechando modais');
+            // Fechar modal de imagem
+            document.getElementById('modalImagem').style.display = 'none';
+            document.getElementById('imagemModal').src = '';
+
+            // Fechar modal de vídeo
+            document.getElementById('modalVideo').style.display = 'none';
+            const video = document.getElementById('videoModal');
+            video.pause();
+            video.src = '';
+
+            document.body.style.overflow = '';
+        }
+
+        function tocarAudio(src) {
+            console.log('🔊 Tocando áudio:', src);
+            const audio = new Audio(src);
+            audio.play().then(() => {
+                mostrarNotificacao('Reproduzindo áudio...', 'info');
+            }).catch(error => {
+                console.error('Erro ao tocar áudio:', error);
+                mostrarNotificacao('Erro ao reproduzir áudio', 'error');
+            });
+        }
+
+        function verNoMapa(lat, lng) {
+            console.log('🗺️ Abrindo mapa:', lat, lng);
+            window.open(`https://www.google.com/maps?q=${lat},${lng}`, '_blank');
+        }
+
+        function excluirAlerta(id) {
+            if (!confirm('Tem certeza que deseja excluir este alerta?')) return;
+
+            console.log('🗑️ Excluindo alerta:', id);
+
+            fetch(`/alerts/${id}`, {
+                method: 'DELETE',
+                headers: {
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const row = document.querySelector(`tr[data-alert-id="${id}"]`);
+                    if (row) row.remove();
+                    mostrarNotificacao('Alerta excluído com sucesso!', 'success');
+                    atualizarEstatisticas();
+                } else {
+                    mostrarNotificacao('Erro ao excluir alerta', 'error');
+                }
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+                mostrarNotificacao('Erro de conexão', 'error');
+            });
+        }
+
+        // ================================
+        // SISTEMA DE NOTIFICAÇÕES
+        // ================================
+        function mostrarNotificacao(message, type = 'info') {
+            console.log('📢 Notificação:', message, type);
+
+            const toast = document.getElementById('toast');
+            const content = document.getElementById('toastContent');
+            const icon = document.getElementById('toastIcon');
+            const text = document.getElementById('toastText');
+
+            // Definir cores e ícones
+            let borderColor = '#3b82f6';
+            let iconSvg = '';
+
+            if (type === 'success') {
+                borderColor = '#10b981';
+                iconSvg = '<svg style="width: 20px; height: 20px; color: #10b981;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>';
+            } else if (type === 'error') {
+                borderColor = '#ef4444';
+                iconSvg = '<svg style="width: 20px; height: 20px; color: #ef4444;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>';
+            } else {
+                borderColor = '#3b82f6';
+                iconSvg = '<svg style="width: 20px; height: 20px; color: #3b82f6;" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>';
+            }
+
+            // Aplicar estilos
+            content.style.borderColor = borderColor;
+            icon.innerHTML = iconSvg;
+            text.textContent = message;
+
+            // Mostrar toast
+            toast.style.display = 'block';
+
+            // Esconder após 3 segundos
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, 3000);
+        }
+
+        // ================================
+        // SISTEMA DE SOM
+        // ================================
+        function inicializarSom() {
+            // Tentar carregar som personalizado
+            window.notificationAudio = new Audio('/som.mp3');
+            window.notificationAudio.volume = 0.7;
+            window.notificationAudio.onerror = () => {
+                console.warn('Som personalizado não encontrado, usando sintético');
+                window.notificationAudio = null;
             };
         }
 
-        function setupEventListeners() {
-            // Sound toggle
-            document.getElementById('sound-toggle').addEventListener('click', toggleSound);
+        function tocarSomNotificacao() {
+            if (!window.soundEnabled) return;
 
-            // Refresh button
-            document.getElementById('refresh-btn').addEventListener('click', forceRefresh);
-
-            // Status change
-            document.addEventListener('change', function(e) {
-                if (e.target.classList.contains('status-select')) {
-                    const alertId = e.target.dataset.alertId;
-                    const newStatus = e.target.value;
-                    updateAlertStatus(alertId, newStatus);
-                }
-            });
-
-            // Event delegation para cliques em mídia - CORRIGIDO
-            document.addEventListener('click', function(e) {
-                const mediaItem = e.target.closest('.media-item');
-                if (!mediaItem) return;
-
-                e.preventDefault();
-                e.stopPropagation();
-
-                const src = mediaItem.dataset.src;
-                const type = mediaItem.dataset.type;
-
-                if (!src) {
-                    console.error('Nenhum src encontrado para o elemento:', mediaItem);
-                    showNotification('Erro: arquivo não encontrado', 'error');
-                    return;
-                }
-
-                console.log('Clique detectado:', { type, src });
-
-                switch(type) {
-                    case 'image':
-                        openImageModal(src);
-                        break;
-                    case 'video':
-                        openVideoModal(src);
-                        break;
-                    case 'audio':
-                        playAudio(src);
-                        break;
-                    default:
-                        console.error('Tipo de mídia desconhecido:', type);
-                }
-            });
-
-            // Fechar modais com ESC
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape') {
-                    closeImageModal();
-                    closeVideoModal();
-                }
-            });
-
-            // Fechar modais clicando fora
-            document.getElementById('imageModal').addEventListener('click', function(e) {
-                if (e.target === this) closeImageModal();
-            });
-
-            document.getElementById('videoModal').addEventListener('click', function(e) {
-                if (e.target === this) closeVideoModal();
-            });
+            if (window.notificationAudio) {
+                window.notificationAudio.currentTime = 0;
+                window.notificationAudio.play().catch(() => tocarSomSintetico());
+            } else {
+                tocarSomSintetico();
+            }
         }
 
-        function initializePolling() {
-            if (isPolling) return;
-            isPolling = true;
-            pollingInterval = setInterval(checkForNewAlerts, 5000);
+        function tocarSomSintetico() {
+            try {
+                const ctx = new (window.AudioContext || window.webkitAudioContext)();
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+
+                osc.frequency.value = 800;
+                osc.type = 'sine';
+
+                gain.gain.setValueAtTime(0, ctx.currentTime);
+                gain.gain.linearRampToValueAtTime(0.3, ctx.currentTime + 0.01);
+                gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.5);
+
+                osc.start();
+                osc.stop(ctx.currentTime + 0.5);
+            } catch (error) {
+                console.error('Erro ao tocar som sintético:', error);
+            }
         }
 
-        function loadInitialAlerts() {
-            fetch('/api/alerts')
-                .then(response => response.json())
-                .then(data => {
-                    currentAlerts = data;
-                    updateStats();
-                })
-                .catch(error => console.error('Erro ao carregar alertas:', error));
+        function alternarSom() {
+            window.soundEnabled = !window.soundEnabled;
+            const button = document.getElementById('sound-toggle');
+            const status = document.getElementById('sound-status');
+
+            if (window.soundEnabled) {
+                button.className = 'flex items-center space-x-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-xl hover:bg-blue-100 transition-colors';
+                status.textContent = 'Som ON';
+                tocarSomNotificacao(); // Testar som
+            } else {
+                button.className = 'flex items-center space-x-2 px-4 py-2 bg-gray-50 text-gray-700 rounded-xl hover:bg-gray-100 transition-colors';
+                status.textContent = 'Som OFF';
+            }
         }
 
-        function checkForNewAlerts() {
-            fetch('/api/alerts')
-                .then(response => response.json())
-                .then(data => {
-                    const newAlerts = data.filter(alert =>
-                        !currentAlerts.some(existing => existing.id === alert.id)
-                    );
+        // ================================
+        // SISTEMA DE POLLING
+        // ================================
+        function iniciarPolling() {
+            if (window.pollingInterval) return;
 
-                    if (newAlerts.length > 0) {
-                        if (soundEnabled) {
-                            playNotificationSound();
+            window.pollingInterval = setInterval(() => {
+                fetch('/api/alerts')
+                    .then(response => response.json())
+                    .then(data => {
+                        const novosAlertas = data.filter(alert =>
+                            !window.currentAlerts.some(existing => existing.id === alert.id)
+                        );
+
+                        if (novosAlertas.length > 0) {
+                            console.log('🚨 Novos alertas encontrados:', novosAlertas.length);
+                            tocarSomNotificacao();
+                            mostrarNotificacao(`${novosAlertas.length} novo(s) alerta(s) recebido(s)!`, 'success');
+
+                            // Adicionar novos alertas à tabela
+                            novosAlertas.forEach(alert => adicionarAlertaTabela(alert));
+                            window.currentAlerts = data;
                         }
 
-                        showNotification(`${newAlerts.length} novo(s) alerta(s) recebido(s)!`, 'success');
-
-                        newAlerts.forEach(alert => {
-                            addNewAlertToTable(alert);
-                        });
-
-                        currentAlerts = data;
-                    }
-
-                    updateStats();
-                    updateLastUpdateTime();
-                })
-                .catch(error => {
-                    console.error('Erro ao verificar alertas:', error);
-                    showNotification('Erro ao verificar alertas', 'error');
-                });
+                        atualizarEstatisticas();
+                        atualizarHorario();
+                    })
+                    .catch(error => {
+                        console.error('Erro no polling:', error);
+                        mostrarNotificacao('Erro ao verificar novos alertas', 'error');
+                    });
+            }, 5000); // Verificar a cada 5 segundos
         }
 
-        function playNotificationSound() {
-            // Tentar tocar o arquivo personalizado primeiro
-            if (notificationAudio) {
-                notificationAudio.currentTime = 0;
-                notificationAudio.play().catch(error => {
-                    console.warn('Erro ao tocar som personalizado:', error);
-                    playFallbackSound();
-                });
-            } else {
-                playFallbackSound();
-            }
-        }
-
-        function playFallbackSound() {
-            // Som sintético como fallback
-            try {
-                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-                const oscillator = audioContext.createOscillator();
-                const gainNode = audioContext.createGain();
-
-                oscillator.connect(gainNode);
-                gainNode.connect(audioContext.destination);
-
-                oscillator.frequency.setValueAtTime(800, audioContext.currentTime);
-                oscillator.type = 'sine';
-
-                gainNode.gain.setValueAtTime(0, audioContext.currentTime);
-                gainNode.gain.linearRampToValueAtTime(0.3, audioContext.currentTime + 0.01);
-                gainNode.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + 0.5);
-
-                oscillator.start(audioContext.currentTime);
-                oscillator.stop(audioContext.currentTime + 0.5);
-            } catch (error) {
-                console.error('Erro ao criar som sintético:', error);
-            }
-        }
-
-        function addNewAlertToTable(alert) {
-            const tableBody = document.getElementById('alerts-table-body');
+        function adicionarAlertaTabela(alert) {
+            const tbody = document.getElementById('alerts-table-body');
             const emptyState = document.getElementById('empty-state');
 
-            if (emptyState) {
-                emptyState.remove();
-            }
+            if (emptyState) emptyState.remove();
 
-            const newRow = createAlertRow(alert);
-            tableBody.insertAdjacentHTML('afterbegin', newRow);
+            const row = criarLinhaAlerta(alert);
+            tbody.insertAdjacentHTML('afterbegin', row);
         }
 
-        function createAlertRow(alert) {
-            const mediaHtml = createMediaHtml(alert);
-            const createdAt = new Date(alert.created_at);
+        function criarLinhaAlerta(alert) {
+            const data = new Date(alert.created_at);
+
+            let botoesMedia = '';
+            if (alert.photo) {
+                botoesMedia += `<button type="button" onclick="abrirImagem('/storage/${alert.photo}')" class="flex items-center px-2 py-1 mb-1 space-x-2 text-xs text-green-700 rounded bg-green-50 hover:bg-green-100"><svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"/></svg><span>Foto</span></button>`;
+            }
+            if (alert.video) {
+                botoesMedia += `<button type="button" onclick="abrirVideo('/storage/${alert.video}')" class="flex items-center px-2 py-1 mb-1 space-x-2 text-xs text-blue-700 rounded bg-blue-50 hover:bg-blue-100"><svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/></svg><span>Vídeo</span></button>`;
+            }
+            if (alert.audio) {
+                botoesMedia += `<button type="button" onclick="tocarAudio('/storage/${alert.audio}')" class="flex items-center px-2 py-1 mb-1 space-x-2 text-xs text-purple-700 rounded bg-purple-50 hover:bg-purple-100"><svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.796L4.828 14H2a1 1 0 01-1-1V7a1 1 0 011-1h2.828l3.555-2.796A1 1 0 019.383 3.076zM12 6a1 1 0 011 1v6a1 1 0 11-2 0V7a1 1 0 011-1zm3-1a1 1 0 000 2 3 3 0 010 6 1 1 0 100 2 5 5 0 000-10z" clip-rule="evenodd"/></svg><span>Áudio</span></button>`;
+            }
+            if (!botoesMedia) {
+                botoesMedia = '<span class="text-xs text-gray-400">Sem mídia</span>';
+            }
 
             return `
-                <tr class="transition-colors hover:bg-gray-50 pulse-animation" data-alert-id="${alert.id}">
+                <tr class="transition-colors hover:bg-gray-50 animate-pulse" data-alert-id="${alert.id}" style="animation: pulse 2s infinite;">
                     <td class="px-6 py-4">
                         <div class="flex items-center space-x-3">
                             <div class="flex items-center justify-center w-10 h-10 bg-red-100 rounded-full">
@@ -569,54 +580,38 @@
                             </div>
                             <div>
                                 <div class="text-sm font-medium text-gray-900">${alert.user_name}</div>
-                                <div class="flex items-center text-sm text-gray-500">
-                                    <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                                    </svg>
-                                    ${alert.user_phone}
-                                </div>
+                                <div class="text-sm text-gray-500">${alert.user_phone}</div>
                             </div>
                         </div>
                     </td>
                     <td class="px-6 py-4">
-                        <div class="flex items-start space-x-2">
-                            <svg class="w-4 h-4 text-green-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                            </svg>
-                            <div>
-                                <div class="text-sm text-gray-900">${alert.location}</div>
-                                <div class="text-xs text-gray-500">${alert.latitude}, ${alert.longitude}</div>
-                            </div>
-                        </div>
+                        <div class="text-sm text-gray-900">${alert.location}</div>
+                        <div class="text-xs text-gray-500">${alert.latitude}, ${alert.longitude}</div>
                     </td>
                     <td class="px-6 py-4">
-                        <div class="max-w-xs">
-                            <div class="mb-2 text-sm text-gray-900">${alert.message || 'Sem descrição'}</div>
-                            ${mediaHtml}
-                        </div>
+                        <div class="text-sm text-gray-900">${alert.message || 'Sem descrição'}</div>
                     </td>
                     <td class="px-6 py-4">
-                        <select class="text-sm font-medium bg-transparent border-0 status-select focus:ring-0 focus:outline-none" data-alert-id="${alert.id}">
+                        <div class="flex flex-col space-y-1">${botoesMedia}</div>
+                    </td>
+                    <td class="px-6 py-4">
+                        <select class="px-2 py-1 text-xs border border-gray-200 rounded status-select" data-alert-id="${alert.id}">
                             <option value="pending" ${alert.status === 'pending' ? 'selected' : ''}>🔴 Pendente</option>
                             <option value="in_progress" ${alert.status === 'in_progress' ? 'selected' : ''}>🟡 Em Progresso</option>
                             <option value="resolved" ${alert.status === 'resolved' ? 'selected' : ''}>🟢 Resolvido</option>
                         </select>
                     </td>
                     <td class="px-6 py-4">
-                        <div class="text-sm text-gray-900">${createdAt.toLocaleDateString('pt-BR')}</div>
-                        <div class="text-sm text-gray-500">${createdAt.toLocaleTimeString('pt-BR')}</div>
+                        <div class="text-sm text-gray-900">${data.toLocaleDateString('pt-BR')}</div>
+                        <div class="text-xs text-gray-500">${data.toLocaleTimeString('pt-BR')}</div>
                     </td>
                     <td class="px-6 py-4">
                         <div class="flex items-center space-x-2">
-                            <button onclick="viewOnMap(${alert.latitude}, ${alert.longitude})" class="p-2 text-blue-600 transition-colors rounded-lg hover:bg-blue-50">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                </svg>
+                            <button type="button" onclick="verNoMapa(${alert.latitude}, ${alert.longitude})" class="p-1 text-blue-600 rounded hover:bg-blue-50">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
                             </button>
-                            <button onclick="deleteAlert(${alert.id})" class="p-2 text-red-600 transition-colors rounded-lg hover:bg-red-50">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
-                                </svg>
+                            <button type="button" onclick="excluirAlerta(${alert.id})" class="p-1 text-red-600 rounded hover:bg-red-50">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>
                             </button>
                         </div>
                     </td>
@@ -624,49 +619,7 @@
             `;
         }
 
-        function createMediaHtml(alert) {
-            let mediaHtml = '<div class="flex items-center space-x-2">';
-
-            if (alert.photo) {
-                mediaHtml += `
-                    <div class="relative group">
-                        <img src="/storage/${alert.photo}" alt="Foto" class="object-cover w-12 h-12 rounded-lg cursor-pointer media-item" data-src="/storage/${alert.photo}" data-type="image">
-                        <div class="absolute inset-0 transition-all bg-black bg-opacity-0 rounded-lg group-hover:bg-opacity-20"></div>
-                    </div>
-                `;
-            }
-
-            if (alert.video) {
-                mediaHtml += `
-                    <div class="relative group">
-                        <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg cursor-pointer media-item" data-src="/storage/${alert.video}" data-type="video">
-                            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293H15M9 10v4a6 6 0 006 6v-4"/>
-                            </svg>
-                        </div>
-                        <div class="absolute inset-0 transition-all bg-black bg-opacity-0 rounded-lg group-hover:bg-opacity-20"></div>
-                    </div>
-                `;
-            }
-
-            if (alert.audio) {
-                mediaHtml += `
-                    <div class="relative group">
-                        <div class="flex items-center justify-center w-12 h-12 bg-purple-100 rounded-lg cursor-pointer media-item" data-src="/storage/${alert.audio}" data-type="audio">
-                            <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
-                            </svg>
-                        </div>
-                        <div class="absolute inset-0 transition-all bg-black bg-opacity-0 rounded-lg group-hover:bg-opacity-20"></div>
-                    </div>
-                `;
-            }
-
-            mediaHtml += '</div>';
-            return mediaHtml;
-        }
-
-        function updateStats() {
+        function atualizarEstatisticas() {
             fetch('/api/alerts')
                 .then(response => response.json())
                 .then(alerts => {
@@ -682,315 +635,163 @@
                 .catch(error => console.error('Erro ao atualizar estatísticas:', error));
         }
 
-        function updateLastUpdateTime() {
+        function atualizarHorario() {
             const now = new Date();
             document.getElementById('last-update').textContent = now.toLocaleTimeString('pt-BR');
         }
 
-        function toggleSound() {
-            soundEnabled = !soundEnabled;
-            const button = document.getElementById('sound-toggle');
-            const status = document.getElementById('sound-status');
-
-            if (soundEnabled) {
-                button.classList.remove('bg-gray-50', 'text-gray-700');
-                button.classList.add('bg-blue-50', 'text-blue-700');
-                status.textContent = 'Som ON';
-            } else {
-                button.classList.remove('bg-blue-50', 'text-blue-700');
-                button.classList.add('bg-gray-50', 'text-gray-700');
-                status.textContent = 'Som OFF';
-            }
-        }
-
-        function forceRefresh() {
-            const button = document.getElementById('refresh-btn');
-            const originalHTML = button.innerHTML;
-
-            button.innerHTML = `
-                <svg class="w-4 h-4 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
-                </svg>
-                <span>Atualizando...</span>
-            `;
-
-            checkForNewAlerts();
-
-            setTimeout(() => {
-                button.innerHTML = originalHTML;
-            }, 1000);
-        }
-
-        function updateAlertStatus(alertId, newStatus) {
-            const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
-
-            if (!csrfToken) {
-                showNotification('Token CSRF não encontrado', 'error');
-                return;
-            }
-
+        function atualizarStatus(alertId, novoStatus) {
             fetch(`/alerts/${alertId}/status`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
-                    'X-CSRF-TOKEN': csrfToken
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
                 },
-                body: JSON.stringify({ status: newStatus })
+                body: JSON.stringify({ status: novoStatus })
             })
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    showNotification('Status atualizado com sucesso!', 'success');
-                    updateStats();
+                    mostrarNotificacao('Status atualizado!', 'success');
+                    atualizarEstatisticas();
                 } else {
-                    showNotification('Erro ao atualizar status', 'error');
+                    mostrarNotificacao('Erro ao atualizar status', 'error');
                 }
             })
             .catch(error => {
                 console.error('Erro:', error);
-                showNotification('Erro de conexão', 'error');
+                mostrarNotificacao('Erro de conexão', 'error');
             });
         }
 
-        function deleteAlert(alertId) {
-            if (!confirm('Tem certeza que deseja excluir este alerta?')) {
-                return;
-            }
+        function forcarAtualizacao() {
+            const btn = document.getElementById('refresh-btn');
+            const originalHTML = btn.innerHTML;
 
-            const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+            btn.innerHTML = '<svg class="w-4 h-4 animate-spin" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"/></svg><span>Atualizando...</span>';
 
-            if (!csrfToken) {
-                showNotification('Token CSRF não encontrado', 'error');
-                return;
-            }
-
-            fetch(`/alerts/${alertId}`, {
-                method: 'DELETE',
-                headers: {
-                    'X-CSRF-TOKEN': csrfToken
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    const row = document.querySelector(`tr[data-alert-id="${alertId}"]`);
-                    if (row) {
-                        row.remove();
-                    }
-                    showNotification('Alerta excluído com sucesso!', 'success');
-                    updateStats();
-                } else {
-                    showNotification('Erro ao excluir alerta', 'error');
-                }
-            })
-            .catch(error => {
-                console.error('Erro:', error);
-                showNotification('Erro de conexão', 'error');
-            });
-        }
-
-        function viewOnMap(lat, lng) {
-            window.open(`https://www.google.com/maps?q=${lat},${lng}`, '_blank');
-        }
-
-        function openImageModal(src) {
-            console.log('Abrindo modal de imagem:', src);
-            const modal = document.getElementById('imageModal');
-            const image = document.getElementById('modalImage');
-
-            if (!modal || !image) {
-                console.error('Elementos do modal de imagem não encontrados');
-                showNotification('Erro ao abrir imagem', 'error');
-                return;
-            }
-
-            image.src = src;
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden'; // Prevenir scroll do body
-        }
-
-        function closeImageModal() {
-            const modal = document.getElementById('imageModal');
-            const image = document.getElementById('modalImage');
-
-            if (modal) {
-                modal.classList.add('hidden');
-                document.body.style.overflow = ''; // Restaurar scroll do body
-            }
-            if (image) {
-                image.src = '';
-            }
-        }
-
-        function openVideoModal(src) {
-            console.log('Abrindo modal de vídeo:', src);
-            const modal = document.getElementById('videoModal');
-            const video = document.getElementById('modalVideo');
-
-            if (!modal || !video) {
-                console.error('Elementos do modal de vídeo não encontrados');
-                showNotification('Erro ao abrir vídeo', 'error');
-                return;
-            }
-
-            video.src = src;
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden'; // Prevenir scroll do body
-        }
-
-        function closeVideoModal() {
-            const modal = document.getElementById('videoModal');
-            const video = document.getElementById('modalVideo');
-
-            if (modal) {
-                modal.classList.add('hidden');
-                document.body.style.overflow = ''; // Restaurar scroll do body
-            }
-            if (video) {
-                video.pause();
-                video.src = '';
-            }
-        }
-
-        function playAudio(src) {
-            console.log('Reproduzindo áudio:', src);
-            const audio = new Audio(src);
-            audio.play().then(() => {
-                console.log('Áudio reproduzido com sucesso');
-                showNotification('Reproduzindo áudio...', 'info');
-            }).catch(error => {
-                console.error('Erro ao reproduzir áudio:', error);
-                showNotification('Erro ao reproduzir áudio', 'error');
-            });
-        }
-
-        function showNotification(message, type = 'info') {
-            const notification = document.getElementById('notification');
-            const content = document.getElementById('notification-content');
-            const text = document.getElementById('notification-text');
-            const icon = document.getElementById('notification-icon');
-
-            if (type === 'success') {
-                content.className = 'bg-white border border-green-200 rounded-xl shadow-lg px-6 py-4 flex items-center space-x-3';
-                icon.innerHTML = `
-                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                `;
-            } else if (type === 'error') {
-                content.className = 'bg-white border border-red-200 rounded-xl shadow-lg px-6 py-4 flex items-center space-x-3';
-                icon.innerHTML = `
-                    <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 18.5c-.77.833.192 2.5 1.732 2.5z"/>
-                    </svg>
-                `;
-            } else {
-                content.className = 'bg-white border border-blue-200 rounded-xl shadow-lg px-6 py-4 flex items-center space-x-3';
-                icon.innerHTML = `
-                    <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                `;
-            }
-
-            text.textContent = message;
-
-            notification.classList.remove('hidden');
-            notification.style.transform = 'translateX(0)';
+            atualizarEstatisticas();
 
             setTimeout(() => {
-                notification.style.transform = 'translateX(100%)';
-                setTimeout(() => {
-                    notification.classList.add('hidden');
-                }, 300);
-            }, 3000);
+                btn.innerHTML = originalHTML;
+                mostrarNotificacao('Dados atualizados!', 'success');
+            }, 1000);
         }
 
-        // Event listeners para controle de visibilidade da página
+        // ================================
+        // FUNÇÃO DE TESTE GLOBAL
+        // ================================
+        function testarTudo() {
+            console.log('🧪 Iniciando teste completo do sistema...');
+
+            // Teste 1: Notificação
+            mostrarNotificacao('Sistema funcionando perfeitamente!', 'success');
+
+            // Teste 2: Som
+            setTimeout(() => {
+                tocarSomNotificacao();
+            }, 500);
+
+            // Teste 3: Modal de imagem (apenas abrir e fechar)
+            setTimeout(() => {
+                console.log('📸 Testando modal de imagem...');
+                document.getElementById('imagemModal').src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5URVNURSBJTUFHRU08L3RleHQ+PC9zdmc+';
+                document.getElementById('modalImagem').style.display = 'block';
+
+                setTimeout(() => {
+                    fecharModal();
+                    mostrarNotificacao('Modal testado com sucesso!', 'info');
+                }, 2000);
+            }, 1000);
+
+            console.log('✅ Teste concluído!');
+        }
+
+        // ================================
+        // INICIALIZAÇÃO
+        // ================================
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🚀 Inicializando sistema de alertas...');
+
+            // Inicializar componentes
+            inicializarSom();
+
+            // Carregar alertas iniciais
+            fetch('/api/alerts')
+                .then(response => response.json())
+                .then(data => {
+                    window.currentAlerts = data;
+                    atualizarEstatisticas();
+                })
+                .catch(error => console.error('Erro ao carregar alertas iniciais:', error));
+
+            // Iniciar polling
+            iniciarPolling();
+
+            // Event listeners
+            document.getElementById('sound-toggle').addEventListener('click', alternarSom);
+            document.getElementById('refresh-btn').addEventListener('click', forcarAtualizacao);
+
+            // Event listener para mudança de status
+            document.addEventListener('change', function(e) {
+                if (e.target.classList.contains('status-select')) {
+                    const alertId = e.target.dataset.alertId;
+                    const novoStatus = e.target.value;
+                    atualizarStatus(alertId, novoStatus);
+                }
+            });
+
+            // Fechar modais com ESC
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') fecharModal();
+            });
+
+            // Fechar modais clicando fora
+            document.getElementById('modalImagem').addEventListener('click', function(e) {
+                if (e.target === this) fecharModal();
+            });
+
+            document.getElementById('modalVideo').addEventListener('click', function(e) {
+                if (e.target === this) fecharModal();
+            });
+
+            // Teste automático após 2 segundos
+            setTimeout(() => {
+                mostrarNotificacao('Sistema carregado e funcionando!', 'success');
+                tocarSomNotificacao();
+            }, 2000);
+
+            console.log('✅ Sistema inicializado com sucesso!');
+        });
+
+        // Limpeza ao sair da página
+        window.addEventListener('beforeunload', function() {
+            if (window.pollingInterval) {
+                clearInterval(window.pollingInterval);
+            }
+        });
+
+        // Pausar/retomar polling baseado na visibilidade da página
         document.addEventListener('visibilitychange', function() {
             if (document.hidden) {
-                clearInterval(pollingInterval);
-                isPolling = false;
+                if (window.pollingInterval) {
+                    clearInterval(window.pollingInterval);
+                    window.pollingInterval = null;
+                }
             } else {
-                initializePolling();
+                iniciarPolling();
             }
         });
-
-        window.addEventListener('beforeunload', function() {
-            if (pollingInterval) {
-                clearInterval(pollingInterval);
-            }
-        });
-
-        // Remover animação de pulse após alguns segundos
-        setInterval(() => {
-            document.querySelectorAll('.pulse-animation').forEach(element => {
-                element.classList.remove('pulse-animation');
-            });
-        }, 5000);
     </script>
 
     <style>
-        .modal-overlay {
-            backdrop-filter: blur(4px);
-            background-color: rgba(0, 0, 0, 0.75);
-        }
-
-        .modal-content {
-            animation: modalSlideIn 0.3s ease-out;
-        }
-
-        @keyframes modalSlideIn {
-            from {
-                opacity: 0;
-                transform: scale(0.9) translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1) translateY(0);
-            }
-        }
-
-        .status-select {
-            background-color: transparent;
-            color: #374151;
-        }
-
-        .status-select option[value="pending"] {
-            color: #DC2626;
-        }
-
-        .status-select option[value="in_progress"] {
-            color: #D97706;
-        }
-
-        .status-select option[value="resolved"] {
-            color: #059669;
-        }
-
-        .pulse-animation {
-            animation: pulse 2s infinite;
-        }
-
         @keyframes pulse {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.5; }
         }
 
-        .media-item {
-            transition: all 0.2s ease;
-        }
-
-        .media-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Garantir que os modais apareçam corretamente */
-        #imageModal:not(.hidden),
-        #videoModal:not(.hidden) {
-            display: flex !important;
-            z-index: 50;
+        .animate-pulse {
+            animation: pulse 2s infinite;
         }
     </style>
 </x-app-layout>
